@@ -225,6 +225,12 @@ function pmpromb_pmpro_membership_level_after_other_settings() {
 		width: 150px;
 	}
 </style>
+<p>
+	<?php
+	$member_badges_link = '<a title="' . esc_attr__( 'Member Badges Add On', 'pmpro-member-badges' ) . '" target="_blank" rel="nofollow noopener" href="https://www.paidmembershipspro.com/add-ons/member-badges/?utm_source=plugin&utm_medium=pmpro-member-badges&utm_campaign=add-ons&utm_content=&utm_term=">' . esc_html__( 'Member Badges', 'pmpro-member-badges' ) . '</a>';
+	printf( esc_html__( 'Learn more about %s.', 'pmpro-member-badges' ), $member_badges_link ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	?>
+</p>
 <table>
 	<tbody class="form-table">
 		<tr>
