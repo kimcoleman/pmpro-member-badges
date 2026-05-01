@@ -20,7 +20,7 @@ function pmpromb_load_textdomain() {
 }
 add_action( 'plugins_loaded', 'pmpromb_load_textdomain' );
 
-function pmpromb_show_badge( $user_id = NULL, $echo = true, $args ) {
+function pmpromb_show_badge( $user_id = NULL, $echo = true, $args = array() ) {
 	if ( empty( $user_id ) ) {
 		global $current_user;
 		$user_id = $current_user->ID;
@@ -29,11 +29,6 @@ function pmpromb_show_badge( $user_id = NULL, $echo = true, $args ) {
 	// If no user ID is set, return false.
 	if ( empty( $user_id ) ) {
 		return false;
-	}
-
-	// If no args are set, set up an empty array.
-	if ( empty( $args ) ) {
-		$args = array();
 	}
 
 	// Set default size if not set in args.
