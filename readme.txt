@@ -2,8 +2,8 @@
 Contributors: strangerstudios
 Tags: paid memberships pro, pmpro, badges, badge, users, members
 Requires at least: 5.4
-Tested up to: 6.7
-Stable tag: 1.1
+Tested up to: 6.9
+Stable tag: 1.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -35,6 +35,10 @@ Please post it in the issues section of GitHub and we'll fix it as soon as we ca
 Please visit our premium support site at https://www.paidmembershipspro.com for more documentation and our support forums.
 
 == Changelog ==
+
+= 1.1.1 - 2026-05-01 =
+* ENHANCEMENT: Added a section heading and "Learn more about Member Badges" documentation link to the Edit Membership Level settings page. #20 (@kimcoleman)
+* BUG FIX: Fixed a PHP 8.1+ deprecation notice in `pmpromb_show_badge()` caused by optional parameters declared before a required parameter. #19 (@JarrydLong)
 
 = 1.1 - 2025-03-31 =
 * ENHANCEMENT: Added support for displaying the `pmpro_member_badge` as an element in the Member Directory and Profile Add On.
